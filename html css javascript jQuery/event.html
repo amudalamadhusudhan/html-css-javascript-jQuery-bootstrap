@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>event</h1>
+     <h1>html</h1>
+    <h2 onclick="changeText(this)">Click on this text!</h2>
+     <div onmouseover="over(this)" onmouseout="out(this)"
+     style="background-color:red;width:120px;height:20px;padding: 40px;">mouse over me</div>
+    <div onmousedown="down(this)" onmouseup="up(this)"
+        style="background-color:green;width:120px;height:20px;padding: 40px;">click me</div>
+    <script>function changeText(id) {
+            id.innerHTML = "text changed!";
+        }
+        function over(obj) {
+            obj.innerHTML = "thankyou"
+        }
+        function out(obj) {
+            obj.innerHTML = "mouse over me";
+        }
+        function up(obj) {
+            obj.innerHTML = "thankyou"
+        }
+        function down(obj) {
+           obj.innerHTML = "realease me";
+        }</script
+</body>
+</html>
